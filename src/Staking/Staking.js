@@ -87,7 +87,7 @@ export default function Staking({ changeMain, changeStake, changePresale }) {
           </div>
           <div className="row btn-group ">
             <div className="col-lg-6 col-md-12">
-              <button className="btnStake  mt-2" onClick={dispalyImage}>
+              <button className="btnStake  mt-2 me-2" onClick={dispalyImage}>
                 Stake All
               </button>
             </div>
