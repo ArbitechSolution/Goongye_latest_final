@@ -216,7 +216,7 @@ const Home = ({ changeMain, changeStake, changePresale }) => {
         let ownerList = await contractOf.methods.walletOfOwner(acc).call();
         const length = ownerList.length;
         console.log("ownerList", length);
-        // dispalyImage();
+        dispalyImage();
         // if (length < 7) {
         if (parseFloat(balance) > parseFloat(totalPrice)) {
           await contractOf.methods.mint(noMints).send({
@@ -225,7 +225,7 @@ const Home = ({ changeMain, changeStake, changePresale }) => {
             gas: "5000000",
           });
           toast.success("Transaction Successfull");
-          dispalyImage();
+          // dispalyImage();
         } else {
           toast.error("insufficient Balance!");
         }
