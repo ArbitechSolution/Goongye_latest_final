@@ -216,7 +216,7 @@ const Home = ({ changeMain, changeStake, changePresale }) => {
         let ownerList = await contractOf.methods.walletOfOwner(acc).call();
         const length = ownerList.length;
         console.log("ownerList", length);
-        dispalyImage();
+        // dispalyImage();
         // if (length < 7) {
         if (parseFloat(balance) > parseFloat(totalPrice)) {
           await contractOf.methods.mint(noMints).send({
@@ -225,7 +225,7 @@ const Home = ({ changeMain, changeStake, changePresale }) => {
             gas: "5000000",
           });
           toast.success("Transaction Successfull");
-          // dispalyImage();
+          dispalyImage();
         } else {
           toast.error("insufficient Balance!");
         }
@@ -1842,8 +1842,11 @@ const Home = ({ changeMain, changeStake, changePresale }) => {
             >
               <div className="minting d-flex justify-content-center" id="mint">
                 <img className="lightImg" src={light} alt="" />
-                <div className="imgArea mt-lg-0 mt-md-0 mt-sm-2">
-                  <img className="presalesTop-image" src={containerImage}></img>
+                <div className="imgAreaModal mt-lg-0 mt-md-0 mt-sm-2">
+                  <img
+                    className="presalesTop-image imgtop"
+                    src={containerImage}
+                  ></img>
                   <span className="imgArea-text">Mint</span>
                 </div>
                 <div className=" container-presales-outside m-5 m-md-3 m-sm-2 ps-0 m-md-1 m-sm-1">

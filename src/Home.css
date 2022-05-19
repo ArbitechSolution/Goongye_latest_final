@@ -17,7 +17,9 @@ a {
   color: #fff !important;
   text-decoration: none !important;
 }
-
+.imgtop {
+  margin-top: 20px;
+}
 a:hover {
   color: #fff;
   text-decoration: none;
