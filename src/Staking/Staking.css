@@ -21,6 +21,8 @@
   align-items: center;
   z-index: 9999;
   margin-top: 74px !important;
+  top: 20px;
+
   /* left: 38%; */
   /* top: -1%; */
 }
