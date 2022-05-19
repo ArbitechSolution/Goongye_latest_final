@@ -32,7 +32,7 @@ export default function MintModal(props) {
       >
         <div className="minting d-flex justify-content-center" id="mint">
           <img className="lightImg" src={light} alt="" />
-          <div className="imgArea mt-lg-0 mt-md-0 mt-sm-2">
+          <div className="imgAreaModal mt-lg-0 mt-md-0 mt-sm-2">
             <img className="presalesTop-image" src={containerImage}></img>
             <span className="imgArea-text">Mint</span>
           </div>
